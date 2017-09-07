@@ -17,16 +17,16 @@ Convert this:
 Into this:
 ```
 [
-	{
-		field1:a,
-		field2:b,
-		field3:c
-	},
-	{
-		field1:x,
-		field2:y,
-		field3:z
-	}
+  {
+    field1:a,
+    field2:b,
+    field3:c
+  },
+  {
+    field1:x,
+    field2:y,
+    field3:z
+  }
 ]
 ```
 
@@ -36,8 +36,8 @@ Feed the raw text from a CSV into parseCSV. This function will parse the string 
 ##### Example
 ```
 var 
-	text    = 'Field1,Field2,Field3\na,b,c\nx,y,z',
-	parsed  = parseCSV(text);
+  text    = 'Field1,Field2,Field3\na,b,c\nx,y,z',
+  parsed  = parseCSV(text);
 
 console.log(parsed);
 // Array [ Object, Object ]
